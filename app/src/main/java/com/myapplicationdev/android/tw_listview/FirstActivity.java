@@ -37,12 +37,12 @@ public class FirstActivity extends AppCompatActivity {
                 Intent j = new Intent(FirstActivity.this, SecondActivity.class);
                 int pos = lv.getPositionForView(view);
                 if (pos==0){
-                    j.putExtra("year",0);
+                    j.putExtra("year","Year 1");
                 }
                 else if (pos==1){
-                    j.putExtra("year",1);
+                    j.putExtra("year","Year 2");
                 }else{
-                    j.putExtra("year",2);
+                    j.putExtra("year","Year 3");
                 }
                 startActivity(j);
             }
